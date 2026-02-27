@@ -10,46 +10,71 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="avatar">
-                <div class="avatar-placeholder">C</div>
+    <div class="cover-page">
+        <!-- 左侧：背景图 + 头像 + 联系方式 -->
+        <aside class="cover-left">
+            <div class="cover-bg"></div>
+            <div class="cover-overlay"></div>
+            <div class="cover-content">
+                <div class="avatar-wrap">
+                    <div class="avatar">C</div>
+                </div>
+                <h2 class="cover-name">Chuten</h2>
+                <p class="cover-tagline">记录思考 · 分享生活</p>
+                <div class="contact-links">
+                    <a href="mailto:2032106768@qq.com" class="contact-item" title="邮箱">
+                        <span class="contact-icon">✉</span>
+                        <span>邮箱</span>
+                    </a>
+                    <a href="#" class="contact-item" title="GitHub">
+                        <span class="contact-icon">⎘</span>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="#" class="contact-item" title="微博">
+                        <span class="contact-icon">◉</span>
+                        <span>微博</span>
+                    </a>
+                </div>
             </div>
-            <h1 class="site-title">Chuten</h1>
-            <p class="site-subtitle">记录思考 · 分享生活</p>
-            <nav class="nav">
+        </aside>
+
+        <!-- 右侧：个人信息 -->
+        <main class="cover-right">
+            <section class="info-section">
+                <h2>关于我</h2>
+                <p>欢迎来到我的个人博客。这里会记录我的学习笔记、技术分享和生活感悟。希望能与志同道合的朋友交流探讨。</p>
+            </section>
+
+            <section class="info-section">
+                <h2>技能方向</h2>
+                <ul class="skill-tags">
+                    <li>前端开发</li>
+                    <li>学习笔记</li>
+                    <li>生活记录</li>
+                </ul>
+            </section>
+
+            <section class="info-section">
+                <h2>最新文章</h2>
+                <div class="article-list">
+                    <a href="#" class="article-card">
+                        <time>2025-02-28</time>
+                        <h3>博客开通啦</h3>
+                        <p>这是我的个人博客的第一篇文章。期待在这里与你分享更多内容。</p>
+                    </a>
+                </div>
+            </section>
+
+            <nav class="cover-nav">
                 <a href="#about">关于</a>
                 <a href="#articles">文章</a>
                 <a href="#contact">联系</a>
             </nav>
-        </header>
 
-        <main class="main">
-            <section id="about" class="section">
-                <h2>关于我</h2>
-                <p>欢迎来到我的个人博客。这里会记录我的学习笔记、技术分享和生活感悟。</p>
-            </section>
-
-            <section id="articles" class="section">
-                <h2>最新文章</h2>
-                <div class="article-list">
-                    <article class="article-card">
-                        <time>2025-02-28</time>
-                        <h3>博客开通啦</h3>
-                        <p>这是我的个人博客的第一篇文章。期待在这里与你分享更多内容。</p>
-                    </article>
-                </div>
-            </section>
-
-            <section id="contact" class="section">
-                <h2>联系我</h2>
-                <p>Email: <a href="mailto:2032106768@qq.com">2032106768@qq.com</a></p>
-            </section>
+            <footer class="cover-footer">
+                <p>© 2025 Chuten. Built with ❤️</p>
+            </footer>
         </main>
-
-        <footer class="footer">
-            <p>© 2025 Chuten. Built with ❤️</p>
-        </footer>
     </div>
 </body>
 </html>
