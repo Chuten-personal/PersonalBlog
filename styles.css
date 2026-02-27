@@ -46,7 +46,7 @@ body {
     position: absolute;
     inset: 0;
     background: linear-gradient(160deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-    background-image: url('https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?w=800&q=80');
+    background-image: url('./images/cover-nordic.jpg');
     background-size: cover;
     background-position: center;
 }
