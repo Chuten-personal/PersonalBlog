@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chuten 的个人博客</title>
+    <!-- GitHub Pages 项目站点路径修复 -->
+    <script>
+      if (location.hostname === 'chuten-personal.github.io') {
+        document.write('<base href="/PersonalBlog/">');
+      }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <!-- 优先使用国内镜像，否则回退 Google Fonts -->
+    <link href="https://fonts.loli.net/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <div class="cover-page">
@@ -20,13 +27,13 @@
                     <div class="avatar">C</div>
                 </div>
                 <h2 class="cover-name">Chuten</h2>
-                <p class="cover-tagline">记录思考 · 分享生活</p>
+                <p class="cover-tagline">记录思考 · 分享生活 · 无限进步</p>
                 <div class="contact-links">
                     <a href="mailto:2032106768@qq.com" class="contact-item" title="邮箱">
                         <span class="contact-icon">✉</span>
                         <span>邮箱</span>
                     </a>
-                    <a href="#" class="contact-item" title="GitHub">
+                    <a href="https://github.com/Chuten-personal/PersonalBlog" class="contact-item" title="GitHub">
                         <span class="contact-icon">⎘</span>
                         <span>GitHub</span>
                     </a>
@@ -43,6 +50,7 @@
             <section class="info-section">
                 <h2>关于我</h2>
                 <p>欢迎来到我的个人博客。这里会记录我的学习笔记、技术分享和生活感悟。希望能与志同道合的朋友交流探讨。</p>
+                <p>本页面所有相关代码均由Cursor AI生成。</p>
             </section>
 
             <section class="info-section">
@@ -57,7 +65,12 @@
             <section class="info-section">
                 <h2>最新文章</h2>
                 <div class="article-list">
-                    <a href="#" class="article-card">
+                    <a href="./articles/agent1.html" class="article-card">
+                        <time>2025-03-01</time>
+                        <h3>Agent学习笔记(一)</h3>
+                        <p>Agentic AI是未来人工智能发展的一个重要方向。它不仅提升了任务执行的自主性和灵活性，也使得AI能够在复杂的应用场景中发挥更大的作用。随着技术的不断进步，我们有理由相信，Agentic AI将在未来逐步改变我们的工作和生活方式，成为我们身边不可或缺的助手。</p>
+                    </a>
+                    <a href="./articles/blog-opening.html" class="article-card">
                         <time>2025-02-28</time>
                         <h3>博客开通啦</h3>
                         <p>这是我的个人博客的第一篇文章。期待在这里与你分享更多内容。</p>

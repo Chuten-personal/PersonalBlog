@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent学习笔记(一) - Chuten 的个人博客</title>
+    <script>
+      (function() {
+        var isGitHub = location.hostname === 'chuten-personal.github.io';
+        var base = isGitHub ? '/PersonalBlog/' : '../';
+        document.write('<base href="' + base + '">');
+        document.write('<link rel="stylesheet" href="styles.css">');
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.loli.net/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cover-page">
+        <!-- 左侧：背景图 + 头像 + 联系方式 -->
+        <aside class="cover-left">
+            <div class="cover-bg"></div>
+            <div class="cover-overlay"></div>
+            <div class="cover-content">
+                <a href="./index.html" class="avatar-wrap">
+                    <div class="avatar">C</div>
+                </a>
+                <h2 class="cover-name">Chuten</h2>
+                <p class="cover-tagline">记录思考 · 分享生活</p>
+                <div class="contact-links">
+                    <a href="mailto:2032106768@qq.com" class="contact-item" title="邮箱">
+                        <span class="contact-icon">✉</span>
+                        <span>邮箱</span>
+                    </a>
+                    <a href="#" class="contact-item" title="GitHub">
+                        <span class="contact-icon">⎘</span>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="#" class="contact-item" title="微博">
+                        <span class="contact-icon">◉</span>
+                        <span>微博</span>
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- 右侧：文章内容 -->
+        <main class="cover-right article-main">
+            <article class="article-post">
+                <header class="article-header">
+                    <a href="./index.html" class="back-link">← 返回首页</a>
+                    <h1 class="article-title">Agent学习笔记(一)</h1>
+                    <time class="article-date">2025-03-01</time>
+                </header>
+                <div class="article-content">
+                    <h1 id="agentic-ai">Agentic AI：未来人工智能的发展趋势</h1>
+<h2 id="_1">我的笔记</h2>
+<ul>
+<li><strong>趋势1</strong>：自然语言交互会变得越来越普遍 </li>
+<li><strong>趋势2</strong>：无需为不同的任务使用单独的软件</li>
+<li><strong>趋势3</strong>：“代理”是人工智能的高级形式</li>
+</ul>
+<p>自然语言 + 大语言模型 + API接口</p>
+<p>目前常用的使用大语言模型的方式通常是给它一个提示词（prompting）让它完成一个任务。以一个简单的例子来说，你希望大语言模型完成一篇文章，可能使用的方式就是和他说给我写一篇xxx的文章。而使用智能体来完成这个任务的方式可能大相径庭，智能体可能会先去网络上搜集相关资料，完成一篇初稿，再根据初稿来判断哪些部分需要补充或者修改完善，再去搜集更多的详细内容最终完成一篇完整的文章。</p>
+<p>在智能体的工作流程里，任务可以被拆分成不同的阶段。怎么将任务拆分成不同的阶段，在每个阶段选择怎么样的策略执行当前的任务是构造智能体的重要能力。本次课程的主要任务是搭建一个Research Agent。智能体的自主程度（自动化任务的复杂程度？）是经常被讨论的话题，Research Agent的示例可能是一个比较复杂的案例，但是同样存在一些流程简单但极具价值的流程。</p>
+<p>总结：智能体任务会将任务流程细化并且拉长，通过迭代优化的过程获得更高质量的产出，个人思考智能体的优势，在创建智能体时应当着重考虑
+- 能够在每个任务选择不同的/更擅长当前任务的LLM来进行完成
+- 能够借助API获得除LLM本身更多的附加信息提升任务完成的质量</p>
+<h2 id="chatgpt">以下内容为ChatGpt根据我的笔记内容扩展生成</h2>
+<p>随着人工智能技术的不断进步，Agentic AI（代理型人工智能）逐渐成为一个重要的研究方向。它通过引入自然语言处理、大型语言模型（LLM）以及API接口，正在逐步改变我们与机器交互的方式，并使得人工智能的应用更加广泛和多样化。</p>
+<h3 id="1">趋势1：自然语言交互会变得越来越普遍</h3>
+<p>随着大型语言模型的飞速发展，基于自然语言的交互已经不再是科幻小说中的概念。如今，我们可以通过简单的语言指令与机器进行沟通，让它们完成各种任务。从文本生成到数据分析，再到图像处理，自然语言成为了人与机器之间最直观、最便捷的沟通方式。预计未来，更多的应用场景将采用自然语言交互，甚至在一些复杂的行业中，也将通过自然语言引导AI来执行专业任务。</p>
+<h3 id="2">趋势2：无需为不同的任务使用单独的软件</h3>
+<p>传统的软件开发通常要求用户为每个特定的任务使用不同的应用程序或工具。例如，写一篇文章需要一个文字处理工具，进行数据分析需要使用统计软件，生成报告需要依赖报告制作工具。而随着Agentic AI的崛起，这些任务可以被统一在一个平台内完成。通过集成不同的工具和服务，AI可以在一个单一的界面中执行多个任务，从而节省用户的时间和精力。AI不仅能执行特定任务，还能够根据任务需求自动调配资源和工具，提供更加高效的解决方案。</p>
+<h3 id="3">趋势3：“代理”是人工智能的高级形式</h3>
+<p>Agentic AI是人工智能发展的高级形式，它的核心特征是自主性和任务管理能力。传统的AI通常通过给定的指令完成单一任务，而Agentic AI能够自主拆解复杂的任务，将任务分解成多个阶段，制定合理的执行策略，并进行不断迭代优化。在这个过程中，AI不仅依赖于单一的大型语言模型（LLM），而是可以根据任务的需求调动多个LLM，甚至调用外部API来获取必要的信息和资源，从而提高任务的质量和效率。</p>
+<h3 id="api">自然语言 + 大型语言模型 + API接口</h3>
+<p>目前，大部分使用大型语言模型的方式是通过给模型一个提示词（prompting）来让其完成任务。例如，如果你想让一个AI生成一篇文章，你可能会直接告诉它：“请写一篇关于XXX的文章。”然而，使用智能体（Agent）来完成同样的任务，其工作流程却更加复杂和精细。智能体首先可能会在网络上搜索相关资料，生成初稿，然后根据初稿判断哪些部分需要补充或修改。接着，智能体可能会再次进行信息搜索，进一步完善内容，直到最终完成一篇完整且高质量的文章。</p>
+<p>这种智能体的工作流程展示了AI在任务执行中的灵活性和适应性。任务不仅仅是一个单一的输入输出过程，而是通过多个步骤的逐步推进和反馈调整，最终达到最优结果。</p>
+<h3 id="_2">智能体的任务分解与策略执行</h3>
+<p>在智能体的工作流中，任务可以被拆解为多个阶段。例如，完成一篇文章的生成任务，智能体首先进行主题研究，然后进行初步的框架搭建，再进行内容的拓展与修改，最后进行语言的润色和结构优化。在每个阶段，智能体会选择最适合当前任务的LLM来执行，甚至可能通过API接口获取更为详细的数据、文献或工具支持，从而提升最终产出的质量。</p>
+<p>这种分阶段的任务处理方式使得Agentic AI在执行复杂任务时展现出更强的适应性和灵活性。任务拆解和执行策略的选择，是构建智能体的关键能力，如何在不同任务阶段选择合适的策略和工具，是智能体发展的重要方向。</p>
+<h3 id="_3">我的思考与展望</h3>
+<p>在创建智能体时，我认为有几个关键要素需要重点考虑：</p>
+<ul>
+<li>
+<p><strong>多LLM的协作</strong>：智能体应当能够在任务的不同阶段选择最适合的LLM来完成特定任务。不同的LLM在处理不同类型的任务时会有不同的优势，因此如何在多个模型之间进行合理调配，将决定智能体的表现和效率。</p>
+</li>
+<li>
+<p><strong>API与外部资源的整合</strong>：除了LLM本身的能力，API接口和外部信息的调用也将大大提升智能体完成任务的质量。通过与外部数据源和工具的集成，智能体能够获取更多实时的、精准的信息，从而为任务的执行提供更加全面的支持。</p>
+</li>
+<li>
+<p><strong>任务迭代优化</strong>：智能体不仅能够完成一个任务，它还能够通过反馈机制进行不断优化。通过在不同阶段评估任务的进展，智能体可以在必要时返回上一个阶段进行调整和完善，从而得到最终更高质量的结果。</p>
+</li>
+</ul>
+<h3 id="_4">总结</h3>
+<p>总之，Agentic AI是未来人工智能发展的一个重要方向。它不仅提升了任务执行的自主性和灵活性，也使得AI能够在复杂的应用场景中发挥更大的作用。随着技术的不断进步，我们有理由相信，Agentic AI将在未来逐步改变我们的工作和生活方式，成为我们身边不可或缺的助手。</p>
+                </div>
+            </article>
+
+            <nav class="cover-nav">
+                <a href="./index.html">首页</a>
+                <a href="#contact">联系</a>
+            </nav>
+
+            <footer class="cover-footer">
+                <p>© 2025 Chuten. Built with ❤️</p>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>

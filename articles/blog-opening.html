@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博客开通啦 - Chuten 的个人博客</title>
+    <script>
+      (function() {
+        var isGitHub = location.hostname === 'chuten-personal.github.io';
+        var base = isGitHub ? '/PersonalBlog/' : '../';
+        document.write('<base href="' + base + '">');
+        document.write('<link rel="stylesheet" href="styles.css">');
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.loli.net/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cover-page">
+        <!-- 左侧：背景图 + 头像 + 联系方式 -->
+        <aside class="cover-left">
+            <div class="cover-bg"></div>
+            <div class="cover-overlay"></div>
+            <div class="cover-content">
+                <a href="./index.html" class="avatar-wrap">
+                    <div class="avatar">C</div>
+                </a>
+                <h2 class="cover-name">Chuten</h2>
+                <p class="cover-tagline">记录思考 · 分享生活</p>
+                <div class="contact-links">
+                    <a href="mailto:2032106768@qq.com" class="contact-item" title="邮箱">
+                        <span class="contact-icon">✉</span>
+                        <span>邮箱</span>
+                    </a>
+                    <a href="#" class="contact-item" title="GitHub">
+                        <span class="contact-icon">⎘</span>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="#" class="contact-item" title="微博">
+                        <span class="contact-icon">◉</span>
+                        <span>微博</span>
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- 右侧：文章内容 -->
+        <main class="cover-right article-main">
+            <article class="article-post">
+                <header class="article-header">
+                    <a href="./index.html" class="back-link">← 返回首页</a>
+                    <h1 class="article-title">博客开通啦</h1>
+                    <time class="article-date">2025-02-28</time>
+                </header>
+                <div class="article-content">
+                    <p>这是我的个人博客的第一篇文章。期待在这里与你分享更多内容。</p>
+                </div>
+            </article>
+
+            <nav class="cover-nav">
+                <a href="./index.html">首页</a>
+                <a href="#contact">联系</a>
+            </nav>
+
+            <footer class="cover-footer">
+                <p>© 2025 Chuten. Built with ❤️</p>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
